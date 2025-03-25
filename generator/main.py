@@ -35,6 +35,7 @@ def getData(repo, parameter, sort, data_pool, json_pool):
                 params['sort'] = sort
 
             issues = request.get_json(url, params)
+            print(issues)
 
             if not issues:
                 print('> end')
